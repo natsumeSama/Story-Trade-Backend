@@ -1,0 +1,14 @@
+GET http://localhost:3000/livres
+
+###
+
+POST http://localhost:3000/livres
+Content-Type: application/json
+
+{
+    "title" : "Jujutsu Kaisen",
+    "author" : "Gege",
+    "editor" : "Mappa",
+    "description" :"depression"
+}
+
