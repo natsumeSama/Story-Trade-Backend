@@ -18,4 +18,8 @@ app.use(express.json())
 const livresRouter = require('./routes/livres')
 app.use('/livres', livresRouter)
 
+const auteursRouter = require('./routes/auteurs')
+app.use('/auteurs', auteursRouter)
+
+
 app.listen(3000,() =>console.log("Server Started") )

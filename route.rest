@@ -1,6 +1,18 @@
+
+### LIVRE
+
+
 GET http://localhost:3000/livres
 
+
 ###
+
+
+GET http://localhost:3000/livres/search?titre=Jujutsu%20Kaisen
+
+
+###
+
 
 POST http://localhost:3000/livres
 Content-Type: application/json
@@ -9,6 +21,87 @@ Content-Type: application/json
     "title" : "Jujutsu Kaisen",
     "author" : "Gege",
     "editor" : "Mappa",
-    "description" :"depression"
+    "description" :"Jujutsu Kaisen description"
 }
 
+
+###
+
+
+POST http://localhost:3000/livres
+Content-Type: application/json
+
+{
+    "title" : "Shadow Slave",
+    "author" : "Guilty Three",
+    "editor" : "Light novel world",
+    "description" :"Shadow slave description"
+}
+
+
+###
+
+
+DELETE http://localhost:3000/livres/delete?titre=Jujutsu%20Kaisen
+
+
+
+###
+
+
+DELETE http://localhost:3000/livres/deleteAll
+
+
+### AUTEURS
+
+
+
+GET http://localhost:3000/auteurs
+
+
+###
+
+
+GET http://localhost:3000/auteurs/search?nom=Gege%20Akutami
+
+
+
+###
+
+
+POST http://localhost:3000/auteurs
+Content-Type: application/json
+
+{
+    "fullName" : "Gege Akutami",
+    "country" : "Japan",
+    "birthYear" : "Unknow",
+    "deathYear" :"-"
+}
+
+
+###
+
+
+POST http://localhost:3000/auteurs
+Content-Type: application/json
+
+{
+    "fullName" : "Guilty Three",
+    "country" : "Unknown",
+    "birthYear" : "-",
+    "deathYear" :"-"
+}
+
+
+###
+
+
+DELETE http://localhost:3000/auteurs/delete?nom=Gege%20Akutami
+
+
+
+###
+
+
+DELETE http://localhost:3000/auteurs/deleteAll

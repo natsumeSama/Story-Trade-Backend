@@ -1,19 +1,19 @@
 const mongoose = require('mongoose')
 
-const livreSchema = new mongoose.Schema({
-    title: {
+const AuteurSchema = new mongoose.Schema({
+    fullName: {
         type: String,
         require: true
     },
-    author: {
+    country: {
         type: String,
         require: true
     },
-    editor: {
+    birthYear: {
         type: String,
         require: true
     },
-    description: {
+    deathYear: {
         type: String,
         require: true
     },
@@ -23,4 +23,4 @@ const livreSchema = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('Livre',livreSchema)
+module.exports = mongoose.model('Auteur',AuteurSchema)
